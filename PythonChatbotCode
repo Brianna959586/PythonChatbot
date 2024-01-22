@@ -1,0 +1,8 @@
+pip install NLTK
+from nltk.chat.util import Chat, reflections
+pairs = [
+         ["hello",["hello back"]],
+         ["my name is (.*)", ["Hello, %1"]]
+         ]
+chat = Chat(pairs, reflections)
+chat.converse()
